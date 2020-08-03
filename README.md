@@ -4,4 +4,5 @@ I am trying to learn JavaScript and I will share my JavaScript Projects for Begi
 I have forked the projects in this site and  make my own scripts for solution. <br />
 *[100+ JavaScript Projects for Beginners!](https://jsbeginners.com/javascript-projects-for-beginners/)*
 ### License <br />
+<hr>
 [MIT](https://github.com/j4ckblack/github.io/blob/master/LICENSE)
