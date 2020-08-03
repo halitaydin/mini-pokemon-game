@@ -1,21 +1,55 @@
 body {
-    background-color: crimson;
-    width: 100%;
-    height: 100%;
+    background-color: #1c1c1c;
+    margin:0 auto;
+    padding: 0;   
 }
-button {
-    background-color: Transparent;
-    color: black;
-    font-size: 22px;
+.flex-container {
+    font-size: 25px;
+    height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgba(0,0,0,0.8);
     border-radius: 5px;
-    border: solid;
-    width: 100px;
-    height: 100%;
 }
-button:focus {
-    outline: none;
+.flex-container :hover {
+    color: #FF8F00;
 }
-#wrapper {
-    text-align: center;
-    margin-top: 25%;
+.flex-container a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    list-style-type: none;
+}
+li {
+    margin-top: 10px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.logo {
+    background-image: url(img/logo.png);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    position: relative;
+}
+.githubButton {
+    position: absolute;
+    margin-top: 0px;
+    right: 30px;
+    width: 30px;
+    height: 50px;
+}
+.img_size {
+    margin-top: 5px;
+    margin-left: -5px;
+    width: 40px;
+    height: 40px;
 }
