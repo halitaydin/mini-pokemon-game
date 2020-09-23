@@ -7,7 +7,8 @@ I am trying to learn JavaScript.<br/>
 
 One of my project are mini Pokemon game for just educational and trying to learn fetch data from API.<br/>
 Therefore I have used PokeApi for fetching datas.<br/>
-A RESTful API for Pokémon - [pokeapi.co](https://pokeapi.co)
+A RESTful API for Pokémon - [pokeapi.co](https://pokeapi.co)<br/>
+Created by Paul Hallett and other PokéAPI contributors around the world. Pokémon and Pokémon character names are trademarks of Nintendo.
 
 
 ## License
