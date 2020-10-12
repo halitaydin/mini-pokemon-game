@@ -213,6 +213,20 @@ input:checked + .slider:before {
   /* border: 1px black solid; */
 }
 
+@media (max-width: 500px) {
+  .gastly, .catch {
+    width: 80px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+.haunter {
+  width: 80px;
+}
+}
+
 .pokebutton{
   box-sizing: border-box;
   margin-top: 75px;
@@ -234,6 +248,13 @@ input:checked + .slider:before {
   /* border: 1px blue solid; */
 }
 
+@media (max-width: 500px) {
+  .pokeball {
+    width: 80px;
+    margin-left: -100px;
+  }
+  }
+
 .pokebutton:focus {
   outline: 0;
 }
@@ -243,3 +264,10 @@ input:checked + .slider:before {
   margin-top: 75px;
   /* border: 1px red solid; */
 }
+
+@media (max-width: 500px) {
+  .pokeMessage {
+   transform: rotate(-90deg);
+   margin-left: -50px;
+  }
+  }
