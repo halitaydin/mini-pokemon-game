@@ -2,19 +2,83 @@
 <html lang="tr-TR">
   <head>
     <meta http-equiv="content-type" content="text/html ; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Learning</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
     <link rel="stylesheet" type="text/css" href="projects_style.css" />
   </head>
   <body>
-    <div class="projectLists">
+    <div class="flex-container">
       <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="projects_index.html">Projects</a></li>
         <li>
-          <a href="01 - Change Background Color Project/index1.html"
-            >01 - Change Background Color Project</a
-          >
+          <a class="githubButton" href="https://github.com/halitaydin" target="_blank"></a>
         </li>
+        <label class="theme-switcher">
+          <input id="switcher" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
       </ul>
     </div>
+
+    <div class="container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="gastly" src="../img/gastly.png" alt="gastly">
+            <img class="catch" src="../img/catch.png" alt="catch">
+            <img class='haunter' src="../img/haunter.png" alt="haunter">
+          </div>
+          <div class="flip-card-back">
+            <img class="pokeMessage" src="../img/poke_message.png" alt="poke_message">
+            <button class="pokebutton">
+              <img class="pokeball" src="../img/pokeball.png" alt="pokeball">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p>Coming Soon!</p>
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p>Coming Soon!</p>
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p>Coming Soon!</p>
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="projects_script.js"></script>
   </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+    <meta http-equiv="content-type" content="text/html ; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Learning</title>
+    <link rel="icon" type="image/png" href="../../img/logo.png"/>
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+  </head>
+  
+  <body>
+    <div class="flex-container">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../Projects/projects_index.html">Projects</a></li>
+        <li>
+          <a class="githubButton" href="https://github.com/halitaydin" target="_blank"></a>
+        </li>
+        <label class="theme-switcher">
+          <input id="switcher" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </ul>
+    </div>
+
+    <div class="form">
+<button class="left">Lucky Number</button>
+<button class="left2">Lucky Name</button>
+      <input type="text" class="search"  placeholder="Put a name (e.g: rattata)" onfocus="this.placeholder=''" onblur="this.placeholder='Put a name (e.g: rattata)'" />
+<button class="reset">Clear</button>
+      <input type="text" class="search2"  placeholder="Put a name (e.g: pikachu)" onfocus="this.placeholder=''" onblur="this.placeholder='Put a name (e.g: pikachu)'" />
+<button class="right2">Lucky Name</button>
+<button class="right">Lucky Number</button>
+    </div>
+
+    <div class="errorSection">
+      <p class="error"></p>
+      <p class="error1"></p>
+    </div>
+
+    <div class="container">
+        <div id="image"></div>
+        <div id="image2"></div>
+        <!-- <div id="ability"></div> -->
+    </div>
+
+    <script src="debounce.js"></script>
+    <script src="script1.js"></script>
+  </body>
+</html>
