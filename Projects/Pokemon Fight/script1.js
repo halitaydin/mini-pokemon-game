@@ -387,6 +387,10 @@ searchBar2.addEventListener('input', debounce(onInput2, 1000));
 
 // Generate Random Number
     	document.querySelector(".left").addEventListener("click", () =>  {
+		document.querySelector('.reset').style.backgroundColor = 'Yellowgreen';  
+		document.querySelector(".left").disabled = true;
+		document.querySelector(".left2").disabled = true;
+		document.querySelector(".search").disabled = true;
 		randomNumber = Math.floor(Math.random()*800);
 		element = searchBar;
 		element.value = randomNumber;
@@ -394,6 +398,10 @@ searchBar2.addEventListener('input', debounce(onInput2, 1000));
 	});
 
 		document.querySelector(".right").addEventListener("click", () =>  {
+		document.querySelector('.reset').style.backgroundColor = 'Yellowgreen';  
+		document.querySelector(".right").disabled = true;
+		document.querySelector(".right2").disabled = true;
+		document.querySelector(".search2").disabled = true;
 		randomNumber = Math.floor(Math.random()*1000);
 		if (randomNumber <= 900) {
 		element = searchBar2;
@@ -407,8 +415,16 @@ searchBar2.addEventListener('input', debounce(onInput2, 1000));
 		searchBar.value = '';
 		searchBar2.value = '';
 		document.querySelector('#image').innerHTML = '';
-		// document.querySelector('#ability').innerHTML = '';
 		document.querySelector('#image2').innerHTML = '';
+		document.querySelector(".search").readOnly = false;
+		document.querySelector(".search2").readOnly = false;
+		document.querySelector(".left").disabled = false;
+		document.querySelector(".right").disabled = false;
+		document.querySelector(".left2").disabled = false;
+		document.querySelector(".right2").disabled = false;
+		document.querySelector(".search").disabled = false;
+		document.querySelector(".search2").disabled = false;
+		document.querySelector('.reset').style.backgroundColor = 'transparent';  
 	});
 
 // Name Generator
@@ -419,6 +435,10 @@ Promise.all([promise1])
 .then(function(values) {
 
   	document.querySelector(".left2").addEventListener("click", () =>  {
+	document.querySelector('.reset').style.backgroundColor = 'Yellowgreen';  
+	document.querySelector(".left2").disabled = true;
+	document.querySelector(".left").disabled = true;
+	document.querySelector(".search").disabled = true;
 	randomNumber = Math.floor(Math.random()*100);
 	search = values[0].data.results[randomNumber].name;
 	element = document.querySelector('.search');
@@ -427,6 +447,10 @@ Promise.all([promise1])
 });
 
 	document.querySelector(".right2").addEventListener("click", () =>  {
+	document.querySelector('.reset').style.backgroundColor = 'Yellowgreen';  
+	document.querySelector(".right2").disabled = true;
+	document.querySelector(".right").disabled = true;
+	document.querySelector(".search2").disabled = true;
 	randomNumber = Math.floor(Math.random()*100);
 	search = values[0].data.results[randomNumber].name;
 	element = document.querySelector('.search2');
@@ -441,3 +465,19 @@ const themeSwitcher = document.getElementById('switcher');
 themeSwitcher.addEventListener('click', function() {
 	document.body.classList.toggle('dark');
 });
+
+// Non-Editable
+	document.querySelector('.search').addEventListener('change', () => {
+		document.querySelector('.reset').style.backgroundColor = 'Yellowgreen';  
+		document.querySelector(".search").readOnly = true;
+		document.querySelector(".left").disabled = true;
+		document.querySelector(".left2").disabled = true;
+		document.querySelector(".search").disabled = true;
+	});
+	document.querySelector('.search2').addEventListener('change', () => {
+		document.querySelector('.reset').style.backgroundColor = 'Yellowgreen';  
+		document.querySelector(".search2").readOnly = true;
+		document.querySelector(".right").disabled = true;
+		document.querySelector(".right2").disabled = true;
+		document.querySelector(".search2").disabled = true;
+	});
