@@ -391,7 +391,7 @@ searchBar2.addEventListener('input', debounce(onInput2, 1000));
 		document.querySelector(".left").disabled = true;
 		document.querySelector(".left2").disabled = true;
 		document.querySelector(".search").disabled = true;
-		randomNumber = Math.floor(Math.random()*800);
+		randomNumber = Math.floor(Math.random()*807);
 		element = searchBar;
 		element.value = randomNumber;
 		element.dispatchEvent(new Event('input'));
@@ -402,12 +402,10 @@ searchBar2.addEventListener('input', debounce(onInput2, 1000));
 		document.querySelector(".right").disabled = true;
 		document.querySelector(".right2").disabled = true;
 		document.querySelector(".search2").disabled = true;
-		randomNumber = Math.floor(Math.random()*1000);
-		if (randomNumber <= 900) {
+		randomNumber = Math.floor(Math.random()*807);
 		element = searchBar2;
 		element.value = randomNumber;
 		element.dispatchEvent(new Event('input'));
-		}
 	}); 
 
 // Clear Button
@@ -424,7 +422,6 @@ searchBar2.addEventListener('input', debounce(onInput2, 1000));
 		document.querySelector(".right2").disabled = false;
 		document.querySelector(".search").disabled = false;
 		document.querySelector(".search2").disabled = false;
-		document.querySelector('.reset').style.backgroundColor = 'transparent';  
 	});
 
 // Name Generator
