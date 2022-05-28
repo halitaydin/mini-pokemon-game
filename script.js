@@ -58,7 +58,7 @@ if (searchBar.value !== '') {
 	
 	if (pokemons[0].sprites.other.dream_world.front_default === null) {
 	document.querySelector('#image').innerHTML = `
-	<img src = "../../img/no_image.png" />
+	<img src = "./img/no_image.png" />
 	<h1>${pokemons[0].name}</h1>
 	<h3 id='species'>${pokemons[0].species.url}</h3>
 	<h3 id='color'></h3>
@@ -150,7 +150,7 @@ const onInput2 = async event => {
 		
 	if (pokemons[0].sprites.other.dream_world.front_default === null) {
 		document.querySelector('#image2').innerHTML = `
-		<img src = "../../img/no_image.png" />
+		<img src = "./img/no_image.png" />
 		<h1>${pokemons[0].name}</h1>
 		<h3 id='species2'>${pokemons[0].species.url}</h3>
 		<h3 id='color2'></h3>
