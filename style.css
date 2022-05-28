@@ -3,7 +3,7 @@
     --background: rgb(244, 244, 244);
     --bottom: solid 1px rgb(14,17,17);
     --color: rgb(14,17,17);
-    --background_image: url(../img/GitHub-Mark-64px.png);
+    --background_image: url(./img/GitHub-Mark-64px.png);
     --background_size: 40px 40px;
     --background_repeat: no-repeat;
 }
@@ -12,7 +12,7 @@
     --background: rgb(14,17,17);
     --bottom: solid 1px rgb(244, 244, 244);
     --color: rgb(244, 244, 244);
-    --background_image: url(../img/github_icon.png);
+    --background_image: url(./img/github_icon.png);
     --background_size: 40px 40px;
     --background_repeat: no-repeat;
   }
