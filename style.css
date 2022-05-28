@@ -52,14 +52,7 @@ li {
   padding-left: 10px;
   padding-right: 10px;
 }
-.logo {
-  background-image: url(img/logo.png);
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 150px 150px;
-  position: relative;
-}
+
 .githubButton {
   position: absolute;
   margin-top: -5px;
