@@ -37,6 +37,13 @@ body {
   text-decoration: none;
   color: var(--color);
 }
+
+@media (max-width: 400px) {
+.heading {
+  margin-left: 40px;
+}
+}
+
 ul {
   display: flex;
   flex-direction: row;
